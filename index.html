@@ -32,6 +32,10 @@
     .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(180deg,var(--accent),#4bb3ff);flex:0 0 10px;margin-top:6px;box-shadow:0 4px 10px rgba(11,99,166,0.12)}
     .muted{color:var(--muted);font-size:13px}
     footer{font-size:13px;color:var(--muted);text-align:right;margin-top:8px}
+    .features{display:flex;gap:16px;margin-top:14px}
+    .feature{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.45));padding:16px;border-radius:12px;flex:1;box-shadow:0 8px 20px rgba(12,40,70,0.06)}
+    .feature h3{margin:0 0 8px;color:var(--accent);font-size:15px}
+    .feature p{margin:0;color:#123243;font-size:14px}
     .cta{display:inline-flex;gap:10px;align-items:center;margin-top:12px}
     .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600;box-shadow:0 6px 20px rgba(11,99,166,0.15)}
     .outline{background:transparent;border:1px solid rgba(7,32,51,0.06);padding:10px 14px;border-radius:10px;color:var(--muted)}
@@ -56,27 +60,36 @@
       <p class="lead">Questa pagina è un piccolo tributo per tutto quello che hai fatto e che continui a essere: un amico fedele, un compagno di risate e una persona di grande valore.</p>
 
       <h2>Perché ti ringrazio</h2>
-      <ul class="reasons">
-        <li><span class="dot" aria-hidden></span><div>Per essere un grande amico, sempre presente e pronto ad ascoltare.</div></li>
-        <li><span class="dot"></span><div>Per avere una grande e bellissima sorella che ti accompagna nella vita.</div></li>
-        <li><span class="dot"></span><div>Per avermi permesso di trascorrere del tempo con tua sorella e condividere bei momenti insieme.</div></li>
-        <li><span class="dot"></span><div>Per avermi fatto sentire accolto da tua mamma, come se fossi parte della famiglia.</div></li>
-        <li><span class="dot"></span><div>Per esserci nei momenti difficili e condividere le vittorie.</div></li>
-        <li><span class="dot"></span><div>Per le serate su Fortnite: strategia, sfide e tante risate insieme.</div></li>
-        <li><span class="dot"></span><div>Per il tuo senso dell'umorismo che migliora le giornate più dure.</div></li>
-        <li><span class="dot"></span><div>Per i consigli sinceri, la lealtà e la fiducia che mi hai dato.</div></li>
-        <li><span class="dot"></span><div>Per la tua generosità, le attenzioni e i piccoli gesti che contano.</div></li>
-        <li><span class="dot"></span><div>Per le avventure condivise, i progetti e le passioni in comune.</div></li>
-      </ul>
 
-      <p class="muted">Questo è solo un piccolo gesto rispetto a tutto quello che meriti. Grazie ancora, amico mio.</p>
+      <section class="story">
+        <p>Riccardo, grazie per essere la persona che sei: un amico fedele, capace di farmi ridere, sostenere e sentire parte di qualcosa di importante. Sei sempre stato al mio fianco nelle sfide, nelle vittorie e nelle serate spensierate.</p>
 
-      <div class="cta">
-        <button class="btn" id="copyBtn">Copia messaggio</button>
-        <button class="outline" onclick="location.reload()">Ricarica</button>
-      </div>
+        <div class="features">
+          <article class="feature">
+            <h3>Un amico vero</h3>
+            <p>Sei stato presente quando serviva, con consigli sinceri, lealtà e una risata pronta per sdrammatizzare. La tua amicizia è stata una certezza.</p>
+          </article>
 
-      <footer>© 2026 — Creato con affetto</footer>
+          <article class="feature">
+            <h3>Famiglia e accoglienza</h3>
+            <p>Grazie per avermi permesso di trascorrere del tempo con tua sorella e per l'accoglienza di tua mamma: mi hai fatto sentire come a casa e questo significa molto.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Momenti condivisi</h3>
+            <p>Dalle serate su Fortnite alle avventure quotidiane: abbiamo costruito ricordi divertenti e sinceri che porto con me.</p>
+          </article>
+        </div>
+
+        <p class="muted">Questo piccolo sito è un ringraziamento per tutto quello che fai e per come rendi migliori le persone intorno a te.</p>
+
+        <div class="cta">
+          <button class="btn" id="copyBtn">Copia messaggio</button>
+          <button class="outline" onclick="location.reload()">Ricarica</button>
+        </div>
+
+        <footer>© 2026 — Creato con affetto</footer>
+      </section>
     </section>
   </main>
 
