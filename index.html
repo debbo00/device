@@ -4,39 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grazie Riccardo Vadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0b63a6">
   <style>
-    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#2b6cb0;--muted:#6b7280}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#111}
-    .wrap{max-width:900px;margin:6vh auto;padding:32px;background:var(--card);border-radius:12px;box-shadow:0 6px 30px rgba(15,23,42,0.08)}
-    h1{color:var(--accent);margin:0 0 8px}
-    p.lead{margin:0 0 16px;color:var(--muted)}
-    ul{margin:16px 0 24px 20px}
-    li{margin:8px 0}
-    footer{font-size:13px;color:var(--muted);text-align:right}
+    :root{
+      --bg1:linear-gradient(135deg,#e6f0ff 0%,#f9fbff 50%,#fff7fb 100%);
+      --card:#ffffff;
+      --accent:#0b63a6;
+      --muted:#6b7280;
+      --glass:rgba(255,255,255,0.6);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:Poppins,Inter,system-ui,Arial;background:var(--bg1);color:#072033;display:flex;align-items:center;justify-content:center;padding:40px}
+    .card{width:100%;max-width:980px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.82));border-radius:var(--radius);backdrop-filter: blur(6px);box-shadow:0 10px 30px rgba(8,20,40,0.12);display:flex;gap:28px;padding:28px}
+    .left{width:260px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:8px}
+    .avatar{width:160px;height:160px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#5ec8ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:42px;box-shadow:0 8px 24px rgba(11,99,166,0.18);position:relative;overflow:hidden}
+    .avatar .spark{position:absolute;right:-10px;top:-10px;width:80px;height:80px;opacity:0.18}
+    .name{margin-top:18px;font-size:20px;font-weight:600;color:var(--accent)}
+    .sub{font-size:13px;color:var(--muted);margin-top:6px;text-align:center}
+    .right{flex:1;padding:8px 4px}
+    h1{margin:6px 0 6px;font-size:28px;color:#072033}
+    p.lead{margin:0 0 14px;color:var(--muted);font-size:15px}
+    h2{margin:8px 0 12px;font-size:16px;color:var(--accent)}
+    ul.reasons{padding-left:18px;margin:0 0 18px}
+    ul.reasons li{margin:10px 0;line-height:1.5;display:flex;gap:10px;align-items:flex-start}
+    .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(180deg,var(--accent),#4bb3ff);flex:0 0 10px;margin-top:6px;box-shadow:0 4px 10px rgba(11,99,166,0.12)}
+    .muted{color:var(--muted);font-size:13px}
+    footer{font-size:13px;color:var(--muted);text-align:right;margin-top:8px}
+    .cta{display:inline-flex;gap:10px;align-items:center;margin-top:12px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600;box-shadow:0 6px 20px rgba(11,99,166,0.15)}
+    .outline{background:transparent;border:1px solid rgba(7,32,51,0.06);padding:10px 14px;border-radius:10px;color:var(--muted)}
+    @media (max-width:860px){.card{flex-direction:column;align-items:center}.left{width:100%;flex-direction:row;gap:16px;padding:10px}.avatar{width:96px;height:96px;font-size:26px}.right{width:100%}}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <h1>Grazie, Riccardo Vadi!</h1>
-    <p class="lead">Questa pagina è un piccolo ringraziamento per tutto quello che sei stato e continui a essere per me.</p>
+  <main class="card" role="main">
+    <section class="left" aria-label="Profilo Riccardo">
+      <div class="avatar" aria-hidden="true">
+        RV
+        <svg class="spark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><g fill="#fff"><circle cx="10" cy="10" r="6"/><circle cx="44" cy="18" r="8"/><circle cx="28" cy="46" r="10"/></g></svg>
+      </div>
+      <div style="text-align:center">
+        <div class="name">Riccardo Vadi</div>
+        <div class="sub">Amico straordinario • Sorella adorata • Compagno di serate</div>
+      </div>
+    </section>
 
-    <h2>Perché ti ringrazio</h2>
-    <ul>
-      <li>Per essere un grande amico, sempre presente.</li>
-      <li>Per avere una grande e bellissima sorella che ti rende ancora più speciale.</li>
-      <li>Per essere sempre stato con me nei momenti difficili e nelle vittorie.</li>
-      <li>Per le serate passate insieme su Fortnite—risate, strategia e complicità.</li>
-      <li>Per il tuo supporto incondizionato e la tua lealtà.</li>
-      <li>Per il tuo senso dell'umorismo che rende migliori le giornate più dure.</li>
-      <li>Per i consigli sinceri e la fiducia che mi hai dato.</li>
-      <li>Per condividere passioni, avventure e piccoli grandi momenti.</li>
-      <li>Per la tua generosità e per esserci sempre quando serve.</li>
-      <li>Per tutte le piccole attenzioni che dimostrano quanto tieni alle persone intorno a te.</li>
-    </ul>
+    <section class="right">
+      <h1>Grazie di cuore, Riccardo</h1>
+      <p class="lead">Questa pagina è un piccolo tributo per tutto quello che hai fatto e che continui a essere: un amico fedele, un compagno di risate e una persona di grande valore.</p>
 
-    <p class="lead">Questo è solo un piccolo gesto rispetto a tutto quello che meriti. Grazie di cuore, Riccardo.</p>
+      <h2>Perché ti ringrazio</h2>
+      <ul class="reasons">
+        <li><span class="dot" aria-hidden></span><div>Per essere un grande amico, sempre presente e pronto ad ascoltare.</div></li>
+        <li><span class="dot"></span><div>Per avere una grande e bellissima sorella che ti accompagna nella vita.</div></li>
+        <li><span class="dot"></span><div>Per esserci nei momenti difficili e condividere le vittorie.</div></li>
+        <li><span class="dot"></span><div>Per le serate su Fortnite: strategia, sfide e tante risate insieme.</div></li>
+        <li><span class="dot"></span><div>Per il tuo senso dell'umorismo che migliora le giornate più dure.</div></li>
+        <li><span class="dot"></span><div>Per i consigli sinceri, la lealtà e la fiducia che mi hai dato.</div></li>
+        <li><span class="dot"></span><div>Per la tua generosità, le attenzioni e i piccoli gesti che contano.</div></li>
+        <li><span class="dot"></span><div>Per le avventure condivise, i progetti e le passioni in comune.</div></li>
+      </ul>
 
-    <footer>© 2026 — Creato con affetto</footer>
+      <p class="muted">Questo è solo un piccolo gesto rispetto a tutto quello che meriti. Grazie ancora, amico mio.</p>
+
+      <div class="cta">
+        <button class="btn" id="copyBtn">Copia messaggio</button>
+        <button class="outline" onclick="location.reload()">Ricarica</button>
+      </div>
+
+      <footer>© 2026 — Creato con affetto</footer>
+    </section>
   </main>
+
+  <script>
+    document.getElementById('copyBtn').addEventListener('click', async ()=>{
+      const text = `Grazie di cuore, Riccardo! Per essere un grande amico, per la tua famiglia, per le serate su Fortnite e per esserci sempre.`;
+      try{await navigator.clipboard.writeText(text);document.getElementById('copyBtn').textContent='Copiato!'}catch(e){alert('Copia non disponibile')}
+    });
+  </script>
 </body>
 </html>
